@@ -38,7 +38,7 @@
 +toString():String
 }
 
-Course o-- Textbook
-Course o-- Instructor
+Course "1"o--"*" Textbook
+Course "1"o--"*" Instructor
 
 @enduml
