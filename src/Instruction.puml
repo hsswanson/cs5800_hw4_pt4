@@ -3,13 +3,13 @@
 
 +Class Course{
 -courseName:String
--instructor:Instructor
--textbook:Textbook
+-instructor:ArrayList<Instructor>
+-textbook:ArrayList<Textbook>
 +getCourseName():String
 +setCourseName(String courseName):void
-+setInstructor(Instructor instructor):void
++addInstructor(Instructor instructor):void
 +getInstructor():Instructor
-+setTextbook(Textbook textbook):void
++addTextbook(Textbook textbook):void
 +getTextbook():Textbook
 +toString():String
 }
