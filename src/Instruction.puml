@@ -1,0 +1,44 @@
+@startuml
+'https://plantuml.com/class-diagram
+
++Class Course{
+-courseName:String
+-instructor:Instructor
+-textbook:Textbook
++getCourseName():String
++setCourseName(String courseName):void
++setInstructor(Instructor instructor):void
++getInstructor():Instructor
++setTextbook(Textbook textbook):void
++getTextbook():Textbook
++toString():String
+}
++Class Textbook{
+-title:String
+-publisher:String
+-author:String
++getTitle():String
++setTitle(String title):void
++getAuthor():String
++setAuthor(String author):void
++getPublisher():String
++setPublisher(String publisher):void
++toString():String
+}
++Class Instructor{
+-firstName:String
+-lastName:String
+-officeNumber:String
++getFirstName():String
++setFirstName(String firstName):void
++getLastName():String
++setLastName(String LastName):void
++getOfficeNumber():String
++setOfficeNumber(String officeNumber):void
++toString():String
+}
+
+Course o-- Textbook
+Course o-- Instructor
+
+@enduml
